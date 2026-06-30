@@ -1,4 +1,4 @@
-<img width="1544" height="912" alt="image" src="https://github.com/user-attachments/assets/af8ef2a0-f8b4-4fe1-aebf-7ecfb781ced2" /># sql-data-warehouse-project
+# sql-data-warehouse-project
 Building a data warehouse project  wilt SQL  Server
 # Data Warehouse and Analytics Project 🚀
 
