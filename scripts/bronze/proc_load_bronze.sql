@@ -1,4 +1,4 @@
-/* --1---inserting data into table created
+ --1---inserting data into table created
 --1--- FULL LOAD 
 --2---- TRUNCATING THE TABLE AND THEN DOING THE FULL LOAD
 -- 3----create stored procedure to have eazy run 
@@ -20,12 +20,18 @@ END
 
 EXEC load_bronze_customers;
 
-*/ */
+*/ 
 
 
 -- 5---also use try and catch block in order to handle error if any 
 ---6-- ALSO calculate time of loading and executing time 
 -- 7-- How long it takes to load whole bronze layer
+/*Parameters:
+    None. 
+	  This stored procedure does not accept any parameters or return any values.
+
+Usage Example:
+    EXEC bronze.load_bronze;*/
 create or alter  procedure bronze.load_bronze AS
 begin 
     DECLARE @start_timing Datetime,@end_timing datetime,@batch_start datetime ,@batch_end datetime 
@@ -139,8 +145,8 @@ end
 set @batch_end = getdate()
 print '>> total load duration ' +cast ((datediff(second,@batch_start,@batch_end)) as NVARCHAR);
 
-GO -- is must to ensure thid exec is occuring out of stored procedure
+--GO -- is must to ensure thid exec is occuring out of stored procedure
 
 
-EXEC bronze.load_bronze  --- to run all uper code just run this to load bronze layer 
+--EXEC bronze.load_bronze  --- to run all uper code just run this to load bronze layer 
 
