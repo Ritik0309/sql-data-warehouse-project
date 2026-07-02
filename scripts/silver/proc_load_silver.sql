@@ -192,5 +192,5 @@ Begin
 		PRINT'====================================='
 	END CATCH
 END
-
---- EXEC silver.load_silver
+GO
+ EXEC silver.load_silver
