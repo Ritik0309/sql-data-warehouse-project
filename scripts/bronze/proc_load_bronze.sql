@@ -145,8 +145,8 @@ end
 set @batch_end = getdate()
 print '>> total load duration ' +cast ((datediff(second,@batch_start,@batch_end)) as NVARCHAR);
 
---GO -- is must to ensure thid exec is occuring out of stored procedure
+GO -- is must to ensure thid exec is occuring out of stored procedure
 
 
---EXEC bronze.load_bronze  --- to run all uper code just run this to load bronze layer 
+EXEC bronze.load_bronze  --- to run all uper code just run this to load bronze layer 
 
