@@ -244,5 +244,5 @@ This project is intended for educational and portfolio purposes.
 Electronics & Communication Engineering  
 IIT (ISM) Dhanbad
 
-Interested in Data Engineering, Data Analytics, Business Intelligence, AI, and Software Development.
+Interested in Data Engineering, Data Analytics, Business Intelligence, and AI.
 
